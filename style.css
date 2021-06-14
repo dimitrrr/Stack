@@ -1,0 +1,90 @@
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+
+    width: 100%;
+    height: 97vh;
+
+    margin: 0 auto;
+
+    border: 1px solid black;
+}
+
+.buttonPart {
+    width: 20%;
+    border-right: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    text-align: center;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+button {    
+    font-size: 20px;
+    font-family: "Times new roman";
+}
+
+button:first-child {
+    margin-bottom: 30px;
+}
+
+.countInfo {    
+    margin-top: 40px;
+}
+
+.bricksCounter, .shelfsCounter {
+    display: flex;
+}
+
+.field {
+    display: flex;
+    width: 80%;
+
+    overflow-x: scroll;
+}
+
+.shelf {
+    min-width: 200px;
+    height: 5px;
+    background-color: #654321;
+    margin-left: 10px;
+    margin-top: 600px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.brick {
+    width: 150px;
+    background-color: red;
+    padding-top: 30px;
+    border: 1px solid black;
+}
+
+.shelf .brick:first-child {
+    margin-bottom: 5px;
+}
+
+.thisShelfBricksCount {
+    padding-bottom: 20px;
+}
+
+.delete {
+    position: relative;
+    bottom: 100px;
+}
